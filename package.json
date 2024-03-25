@@ -1,0 +1,32 @@
+{
+  "name": "color-craft",
+  "version": "0.1.0",
+  "description": "a color manipulation library for javascript",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "npm run build && node --experimental-vm-modules node_modules/mocha/bin/mocha --experimental-vm-modules tests/color.test.mjs",
+    "mocha": "node --experimental-vm-modules node_modules/mocha/bin/mocha --experimental-vm-modules tests/color.test.mjs",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Vidit2207/color-craft.git"
+  },
+  "homepage": "git@github.com:Vidit2207/color-craft.git",
+  "keywords": [
+    "colors"
+  ],
+  "author": "Vidit Modi",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^10.3.0",
+    "typescript": "^5.4.3"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
