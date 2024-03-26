@@ -1,15 +1,10 @@
-import { hslObject, rgbObject } from "../interfaces/color.interfaces";
+import {
+  colorObject,
+  hslObject,
+  rgbObject,
+} from "../interfaces/color.interfaces";
 import { Convertor } from "./convertor.class";
 
-interface colorObject {
-  r: number;
-  g: number;
-  b: number;
-  h: number;
-  s: number;
-  l: number;
-  a: number;
-}
 export class Color {
   r: number = 255;
   g: number = 255;

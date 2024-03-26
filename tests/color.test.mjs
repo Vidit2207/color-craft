@@ -1,5 +1,6 @@
 // const Color = require("../dist/index.js");
-import { Color } from "../dist/index.js";
+import { Color, AnalogousColorScheme } from "../dist/index.js";
+
 import chai from "chai";
 const { expect } = chai;
 // const { Color } = cc;
@@ -143,3 +144,5 @@ describe("***** Color Setters Tests *****", () => {
   //   expect(color.b).to.equal(230);
   // });
 });
+
+new AnalogousColorScheme(6);
